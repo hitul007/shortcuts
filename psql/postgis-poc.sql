@@ -1,4 +1,3 @@
-```
 drop table college;
 
 create table college(
@@ -25,4 +24,3 @@ SELECT name, ST_Distance(
             ST_Transform(geo::geometry,900913),
             ST_Transform(ST_GeomFromText('POINT(23.078430 72.535830)', 4326),900913)
         ) from college;
-```
