@@ -21,5 +21,8 @@ SELECT name, ST_Distance(
 ) from college;
 
 
-select name, ST_Distance_Spheroid(geo::geography, ST_GeomFromText('POINT(23.032410 72.547960)',4326), 'SPHEROID["WGS 84",6378137,298.257223563]') from college;
+SELECT name, ST_Distance(
+            ST_Transform(geo::geometry,900913),
+            ST_Transform(ST_GeomFromText('POINT(23.078430 72.535830)', 4326),900913)
+        ) from college;
 ```
