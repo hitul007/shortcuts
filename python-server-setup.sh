@@ -20,3 +20,5 @@ echo 'eval "$(pyenv init -)"' >> ~/.bash_profile
 echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bash_profile
 
 exec "$SHELL"
+
+exec "sudo apt-get install -y libpq-dev gcc python-dev"
