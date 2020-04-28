@@ -23,3 +23,4 @@ def pagination_on_queryset(queryset, page, per_page_items):
         return {"page_count": p.num_pages}
 
     return {"page_count": p.num_pages, "data": page_instance.object_list}
+
