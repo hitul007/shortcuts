@@ -25,3 +25,7 @@ exec "sudo apt-get install -y libpq-dev gcc python-dev"
 
 # Tensorflow
 exec "sudo apt-get -y install libtesseract-dev libleptonica-dev"
+
+
+# If centos
+yum install gcc openssl-devel bzip2-devel libffi-devel
