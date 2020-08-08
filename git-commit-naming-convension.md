@@ -1,3 +1,5 @@
+## Git Commit standard
+
 - Commit messages should contain the details about the what has been commited in one liner. 
 - It should have the starting tags ADDED:, FIXED:, MODIFIED:, DELETED: and later the message.
 - Standard commit msg look like,
