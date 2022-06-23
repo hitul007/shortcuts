@@ -24,10 +24,10 @@ echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bash_profile
 
 exec "$SHELL"
 
-exec "sudo apt-get install -y libpq-dev gcc python-dev"
+sudo apt-get install -y libpq-dev gcc python-dev
 
-# Tensorflow
-exec "sudo apt-get -y install libtesseract-dev libleptonica-dev"
+# If need Tensorflow
+sudo apt-get -y install libtesseract-dev libleptonica-dev
 
 
 # If centos
